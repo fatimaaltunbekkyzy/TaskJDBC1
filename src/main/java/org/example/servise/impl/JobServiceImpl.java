@@ -21,20 +21,20 @@ jobDao.addJob(job);
 
     @Override
     public Job getJobById(Long jobId) {
-        jobDao.getJobById(jobId);
-        return null;
+        return jobDao.getJobById(jobId);
+
     }
 
     @Override
     public List<Job> sortByExperience(String ascOrDesc) {
-        jobDao.sortByExperience(ascOrDesc);
-        return null;
+        return  jobDao.sortByExperience(ascOrDesc);
+
     }
 
     @Override
     public Job getJobByEmployeeId(Long employeeId) {
-        jobDao.getJobByEmployeeId(employeeId);
-        return null;
+        return jobDao.getJobByEmployeeId(employeeId);
+
     }
 
     @Override

@@ -13,7 +13,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     EmployeeDao employeeDao = new EmployeeDaoImpl();
     @Override
     public void createEmployee() {
-employeeDao.createEmployee();
+    employeeDao.createEmployee();
     }
 
     @Override
@@ -38,25 +38,25 @@ employeeDao.updateEmployee(id,employee);
 
     @Override
     public List<Employee> getAllEmployees() {
-        employeeDao.getAllEmployees();
-        return null;
+        return employeeDao.getAllEmployees();
+
     }
 
     @Override
     public Employee findByEmail(String email) {
-        employeeDao.findByEmail(email);
-        return null;
+       return employeeDao.findByEmail(email);
+
     }
 
     @Override
     public Map<Employee, Job> getEmployeeById(Long employeeId) {
-        employeeDao.getEmployeeById(employeeId);
-        return null;
+        return employeeDao.getEmployeeById(employeeId);
+
     }
 
     @Override
     public List<Employee> getEmployeeByPosition(String position) {
-        employeeDao.getEmployeeByPosition(position);
-        return null;
+        return  employeeDao.getEmployeeByPosition(position);
+
     }
 }
